@@ -1,0 +1,69 @@
+/* Hallmark · macrostructure: Catalogue · tone: quiet editorial · anchor hue: red ink */
+/* Hallmark · pre-emit critique: P4 H5 E4 S5 R5 V4 */
+@import "../tokens.css";
+html, body { overflow-x: clip; }
+html { scrollbar-gutter: stable; }
+:focus-visible { outline: 2px solid var(--color-accent); outline-offset: 4px; }
+.page-shell { max-width: var(--page-width); margin: auto; padding-inline: var(--space-page); position: relative; }
+.folio-nav, .folio-nav div, .footer-line, .footer-line div, .dialog-head, .work-heading, .project-heading {
+  display: flex; align-items: baseline; justify-content: space-between; gap: 16px;
+}
+.folio-nav { align-items: center; padding: 16px 0; border-bottom: 1px solid var(--rule-strong); }
+.folio-nav div a { font-size: 16px; font-weight: 600; }
+.folio-nav div a[aria-current] { font-weight: 800; }
+.monogram { font-size: 32px; line-height: 1; letter-spacing: -.09em; }
+.folio-nav div, .footer-line div { gap: clamp(16px, 3vw, 32px); font-size: 14px; }
+.page-shell a:hover, summary:hover { color: var(--color-accent); text-decoration: underline; text-underline-offset: 4px; }
+.page-shell .profile-intro { padding: 0; }
+.page-shell h2 { font-family: var(--font-display); font-size: clamp(36px, 5vw, 56px); line-height: 1.08; letter-spacing: -.045em; }
+#work { padding-block: var(--space-section); }
+.work-heading { margin-bottom: 32px; }
+.work-heading span, .project-heading span, .demo-label { color: var(--color-secondary); font-size: 12px; }
+.work-grid { display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); gap: 16px; align-items: stretch; }
+.project-print { position: relative; display: grid; width: 100%; background: var(--bg-2); padding: 6px; border: 1px solid var(--color-rule); cursor: zoom-in; }
+.project-print img { width: 100%; height: auto; border: 1px solid var(--color-rule); }
+.project-print span { position: absolute; right: 6px; bottom: 0; color: var(--color-secondary); }
+.project-heading { margin: 15px 0 8px; flex-wrap: wrap; gap: 4px 12px; }
+.project-heading h3 { font-size: 25px; letter-spacing: -.04em; line-height: 1.15; }
+.work-entry > p { color: var(--color-secondary); line-height: 1.6; }
+.source-link, summary { display: inline-block; margin-top: 12px; color: var(--color-accent); font-size: 14px; text-decoration: underline; text-underline-offset: 4px; }
+summary { cursor: pointer; display: list-item; width: fit-content; }
+.demo { padding: 16px 0; overflow-wrap: anywhere; }
+.demo-label { margin-bottom: 12px; }
+.demo .grid { grid-template-columns: minmax(0,1fr); }
+.demo .grid > * { grid-column: auto; min-width: 0; }
+.contact-spread { border-top: 1px solid var(--rule-strong); padding-block: var(--space-section); }
+.email-link { display: inline-block; margin-top: 16px; font-size: clamp(16px, 3vw, 26px); color: var(--color-accent); }
+.footer-line { margin-top: 48px; padding-top: 14px; border-top: 1px solid var(--color-rule); font-size: 13px; }
+dialog { margin: auto; width: min(92vw, 960px); max-height: 90dvh; overflow: auto; padding: 16px; border: 1px solid var(--rule-strong); background: var(--bg); color: var(--text); }
+dialog::backdrop { background: oklch(15% 0 0 / .7); }
+dialog img { display: block; max-height: 68dvh; width: 100%; object-fit: contain; margin: 12px 0; }
+dialog p { font-size: 14px; }
+@media (max-width: 640px) {
+  .work-grid { grid-template-columns: minmax(0,1fr); }
+  .work-heading { align-items: center; }
+  .footer-line { flex-wrap: wrap; }
+}
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+.social-icon { display: inline-grid; width: 44px; height: 44px; place-items: center; }
+.footer-line { align-items: center; }
+
+.work-entry { padding: 12px; border: 1px solid var(--color-rule); background: var(--card); }
+.work-entry > p { font-size: 14px; line-height: 1.5; }
+.project-heading { display: grid; gap: 2px; margin: 12px 0 8px; }
+.project-print span { background: var(--bg-2); line-height: 1; }
+@media (max-width: 930px) { .work-grid { grid-template-columns: repeat(2,minmax(0,1fr)); } }
+@media (max-width: 520px) {
+  .work-grid { grid-template-columns: minmax(0,1fr); gap: 10px; }
+  .work-entry { display: grid; grid-template-columns: minmax(0,.65fr) minmax(0,1fr); column-gap: 12px; }
+  .project-print { grid-row: span 2; align-self: center; }
+  .project-heading { margin-top: 0; }
+}
+
+.folio-main { position: relative; }
+.folio-lamp { position: absolute; z-index: 1; top: 0; right: -32px; width: 128px; height: 164px; overflow: clip; pointer-events: none; }
+.folio-lamp button { pointer-events: auto; }
+@media (max-width: 840px) {
+  .folio-lamp { right: -16px; transform: scale(.75); transform-origin: top right; }
+
+}

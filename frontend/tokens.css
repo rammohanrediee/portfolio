@@ -1,0 +1,10 @@
+:root {
+  --color-ink: var(--text);
+  --color-secondary: var(--text-2);
+  --color-accent: var(--red);
+  --color-rule: var(--rule);
+  --font-display: "Newsreader", Georgia, serif;
+  --page-width: 1600px;
+  --space-page: clamp(20px, 5vw, 64px);
+  --space-section: clamp(40px, 6vw, 72px);
+}
