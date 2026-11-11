@@ -42,7 +42,7 @@
   height: auto;
   aspect-ratio: 1;
   object-fit: cover;
-  object-position: center 42%;
+  object-position: center 12%;
   flex: none;
   border: 3px solid var(--rule);
   border-radius: 50%;
