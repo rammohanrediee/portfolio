@@ -9,6 +9,14 @@
   width: min(100%, 66ch);
   margin-inline: auto;
 }
+.intro-mark {
+  display: block;
+  width: clamp(76px, 9vw, 104px);
+  height: auto;
+  margin-bottom: 28px;
+  border: 1px solid var(--rule-strong);
+  border-radius: 18px;
+}
 .intro-title { font-weight: 750; margin-bottom: 32px; line-height: 1.06; letter-spacing: -.055em; }
 .intro-copy p { font-weight: 550; color: var(--text); font-size: clamp(17px, 1.65vw, 22px); line-height: 1.65; }
 .intro-copy p + p { margin-top: 16px; }
@@ -18,6 +26,7 @@
 .intro-social a { display: grid; place-items: center; width: 40px; height: 44px; }
 @media (max-width: 840px) {
   .intro-page { padding-top: max(110px, 12vh); }
+  .intro-mark { margin-bottom: 24px; border-radius: 15px; }
 }
 .intro-title { display: grid; }
 .intro-title > span { grid-area: 1 / 1; }

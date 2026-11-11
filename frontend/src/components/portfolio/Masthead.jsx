@@ -51,6 +51,7 @@ function IntroTitle() {
 export const Masthead = () => (
   <header className="intro-page">
     <div className="intro-copy">
+      <img className="intro-mark" src="/ramu-mark.png" width="256" height="256" alt="" decoding="async" />
       <IntroTitle />
       <p>I build full-stack web applications in Nandyala, India. Using JavaScript, Python, React, and other technologies, I turn complex ideas into modern web apps with clean, user-friendly experiences.</p>
       <p>I like being able to check an answer for myself. That’s why I build tools that show where their answers come from.</p>

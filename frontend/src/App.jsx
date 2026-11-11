@@ -28,7 +28,9 @@ export default function App() {
     <ThemeProvider>
       <div id="top" className="page-shell">
         <nav className="folio-nav" aria-label="Portfolio">
-          <a className="monogram font-serif-display" href="#intro" onClick={() => setIntroVisit(n => n + 1)} aria-label="Ram Mohan Reddy K, intro">Rmr.</a>
+          <a className="brand-link" href="#intro" onClick={() => setIntroVisit(n => n + 1)} aria-label="Ram Mohan Reddy K, intro">
+            <img className="brand-mark" src="/ramu-mark.png" alt="" width="44" height="44" />
+          </a>
           <div>
             <a href="#about" aria-current={hash === "#about" ? "location" : undefined}>About</a>
             <a href="#work" aria-current={hash === "#work" ? "location" : undefined}>Projects</a>

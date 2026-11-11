@@ -8,10 +8,12 @@ html { scrollbar-gutter: stable; }
 .folio-nav, .folio-nav div, .footer-line, .footer-line div, .dialog-head, .work-heading, .project-heading {
   display: flex; align-items: baseline; justify-content: space-between; gap: 16px;
 }
-.folio-nav { align-items: center; padding: 16px 0; border-bottom: 1px solid var(--rule-strong); }
+.folio-nav { align-items: center; padding: 10px 0; border-bottom: 1px solid var(--rule-strong); }
 .folio-nav div a { font-size: 16px; font-weight: 600; }
 .folio-nav div a[aria-current] { font-weight: 800; }
-.monogram { font-size: 32px; line-height: 1; letter-spacing: -.09em; }
+.brand-link { display: inline-flex; flex: none; border-radius: 10px; }
+.brand-mark { display: block; width: 44px; height: 44px; object-fit: cover; border: 1px solid var(--rule-strong); border-radius: 10px; }
+.page-shell .brand-link:hover { text-decoration: none; }
 .folio-nav div, .footer-line div { gap: clamp(16px, 3vw, 32px); font-size: 14px; }
 .page-shell a:hover, summary:hover { color: var(--color-accent); text-decoration: underline; text-underline-offset: 4px; }
 .page-shell .profile-intro { padding: 0; }
