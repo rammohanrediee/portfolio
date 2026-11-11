@@ -37,17 +37,24 @@
   gap: clamp(20px, 3vw, 40px);
   padding: clamp(24px, 4vw, 44px);
 }
-.about-person img {
+.about-portrait {
+  position: relative;
   width: clamp(150px, 16vw, 180px);
-  height: auto;
   aspect-ratio: 1;
-  object-fit: cover;
-  object-position: center 20%;
   flex: none;
+  overflow: hidden;
   background: #d8d8d6;
   border: 3px solid var(--rule);
   border-radius: 50%;
   box-shadow: 0 8px 32px rgba(0, 0, 0, .15);
+}
+.about-portrait img {
+  position: absolute;
+  top: 8%;
+  left: 5%;
+  display: block;
+  width: 90%;
+  height: auto;
 }
 .about-board .about-person h2 {
   font-family: inherit;
