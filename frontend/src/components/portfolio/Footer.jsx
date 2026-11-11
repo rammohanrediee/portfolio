@@ -22,7 +22,7 @@ export const Footer = () => (
       <div className="site-footer-meta">
         <p>© {new Date().getFullYear()} {PROFILE.name}. All rights reserved.</p>
         <a href={LINKS.email}>{LINKS.email.slice(7)}</a>
-        <p>Made in Nandyala, India</p>
+        <p>Made in Bangalore, Karnataka, India</p>
       </div>
     </div>
     <a className="site-footer-up" href="#top" aria-label="Back to top"><ArrowUp size={21} strokeWidth={1.4} /></a>

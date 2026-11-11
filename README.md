@@ -4,7 +4,7 @@ A personal portfolio featuring selected full-stack and applied AI projects, an i
 
 ## About
 
-I’m Ram Mohan Reddy, a Python backend and applied AI engineer based in Nandyala, India. I build full-stack applications and tools that make answers easier to verify.
+I’m Ram Mohan Reddy, a Python backend and applied AI engineer based in Bangalore, Karnataka, India. I build full-stack applications and tools that make answers easier to verify.
 
 ## Featured projects
 

@@ -4,7 +4,7 @@ import { PROFILE } from "../../constants/portfolio";
 import "./About.css";
 
 const facts = [
-  [MapPin, "Location", "Nandyala, India"],
+  [MapPin, "Location", "Bangalore, Karnataka, India"],
   [Code2, "Languages", "Python · SQL · JavaScript"],
   [Heart, "Interests", "Dev · AI · Gym · Sports"],
 ];

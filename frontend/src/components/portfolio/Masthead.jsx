@@ -59,7 +59,7 @@ export function Masthead() {
           <MascotMark key={logoPlayCount} className="intro-mark" playing={logoPlayCount > 0} />
         </button>
         <IntroTitle />
-        <p>I build full-stack web applications in Nandyala, India. Using JavaScript, Python, React, and other technologies, I turn complex ideas into modern web apps with clean, user-friendly experiences.</p>
+        <p>I build full-stack web applications in Bangalore, Karnataka, India. Using JavaScript, Python, React, and other technologies, I turn complex ideas into modern web apps with clean, user-friendly experiences.</p>
         <p>I learn by building. When something breaks, I figure out why, fix it, and understand the idea a little better.</p>
         <a className="journey-link" href="#about">Explore my journey <span aria-hidden="true">→</span></a>
         <SocialLinks className="intro-social" />
