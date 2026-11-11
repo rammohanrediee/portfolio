@@ -1,13 +1,14 @@
 import { useRef, useState } from "react";
+import { LINKS } from "../../constants/portfolio";
 
 const projects = [
-  { name: "TAL", type: "Career workspace", view: "Career conversation",
+  { id: "tal", name: "TAL", type: "Career workspace", view: "Career conversation",
     text: "Track job applications and bring résumé evidence into the same workspace as your career conversations." },
-  { name: "CVLens", type: "Document analysis", view: "Résumé upload",
+  { id: "cvlens", name: "CVLens", type: "Document analysis", view: "Résumé upload",
     text: "Compare a résumé with a job description and trace each match back to the line that supports it." },
-  { name: "PeerMock", type: "Interview practice", view: "Practice workspace sign-in",
+  { id: "peermock", name: "PeerMock", type: "Interview practice", view: "Practice workspace sign-in",
     text: "Book a mock interview slot and practise with an AI mentor." },
-  { name: "OrbitDesk", type: "Support engineering", view: "Support request workspace",
+  { id: "orbitdesk", name: "OrbitDesk", type: "Support engineering", view: "Support request workspace",
     text: "Find answers in support documentation, inspect the citations, and stop when the available evidence is too thin." },
 ];
 
@@ -26,6 +27,7 @@ export function InterviewSection() {
             </button>
             <div className="project-heading"><h3 className="font-serif-display">{p.name}</h3><span>{p.type}</span></div>
             <p>{p.text}</p>
+            <a className="source-link" href={LINKS.projectRepos[p.id]} target="_blank" rel="noopener noreferrer" aria-label={`View ${p.name} source on GitHub`}>View source ↗</a>
           </article>
         ))}
       </div>

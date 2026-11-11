@@ -1,5 +1,4 @@
-// Central content + links for the portfolio. Replace the placeholder URLs
-// below with real ones when provided by Ram.
+// Central content + links for the portfolio.
 
 export const PROFILE = {
   name: "Ram Mohan Reddy K",
@@ -12,12 +11,18 @@ export const PROFILE = {
   githubUsername: "rammohanrediee",
 };
 
-// --- Social & project links (placeholders — swap with real URLs) ---
+// --- Social and project links ---
 export const LINKS = {
   github: "https://github.com/rammohanrediee",
   x: "https://x.com/lone_warrior_49",
   email: "mailto:krammohan8845@gmail.com",
   voicePortfolio: "#voice-portfolio",
+  projectRepos: {
+    tal: "https://github.com/rammohanrediee/TAL",
+    cvlens: "https://github.com/rammohanrediee/cvlens",
+    peermock: "https://github.com/rammohanrediee/PeerMock",
+    orbitdesk: "https://github.com/rammohanrediee/orbitdesk-customer-support-agent",
+  },
   orbitdesk: "#",
   peermock: "#",
   cvlens: "#",
