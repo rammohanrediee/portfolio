@@ -7,7 +7,7 @@ const projects = [
   { id: "cvlens", name: "CVLens", type: "Document analysis", view: "Résumé upload",
     text: "Compare a résumé with a job description and trace each match back to the line that supports it." },
   { id: "peermock", name: "PeerMock", type: "Interview practice", view: "Practice workspace sign-in",
-    text: "Book a mock interview slot and practise with an AI mentor." },
+    text: "Book a mock interview slot. Practice with an AI mentor is still in the works." },
   { id: "orbitdesk", name: "OrbitDesk", type: "Support engineering", view: "Support request workspace",
     text: "Find answers in support documentation, inspect the citations, and stop when the available evidence is too thin." },
 ];
