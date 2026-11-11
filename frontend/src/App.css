@@ -13,6 +13,15 @@ html { scrollbar-gutter: stable; }
 .folio-nav div a[aria-current] { font-weight: 800; }
 .brand-link { display: inline-flex; flex: none; border-radius: 12px; }
 .brand-mark { display: block; width: 52px; height: 52px; object-fit: cover; border: 1px solid var(--rule-strong); border-radius: 12px; }
+.mascot-pupils { animation: mascot-look 5s ease-in-out infinite; }
+@keyframes mascot-look {
+  0%, 18%, 65%, 100% { transform: translateY(0); }
+  28%, 36% { transform: translateY(-7px); }
+  48%, 56% { transform: translateY(5px); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .mascot-pupils { animation: none; }
+}
 .page-shell .brand-link:hover { text-decoration: none; }
 .folio-nav div, .footer-line div { gap: clamp(16px, 3vw, 32px); font-size: 14px; }
 .page-shell a:hover, summary:hover { color: var(--color-accent); text-decoration: underline; text-underline-offset: 4px; }

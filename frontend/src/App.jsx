@@ -7,6 +7,7 @@ import { ThemeProvider } from "./context/ThemeContext";
 import { InterviewSection } from "./components/portfolio/InterviewSection";
 import { TechStack } from "./components/portfolio/TechStack";
 import { Footer } from "./components/portfolio/Footer";
+import { MascotMark } from "./components/portfolio/MascotMark";
 
 export default function App() {
   const [hash, setHash] = useState(() => window.location.hash);
@@ -29,7 +30,7 @@ export default function App() {
       <div id="top" className="page-shell">
         <nav className="folio-nav" aria-label="Portfolio">
           <a className="brand-link" href="#intro" onClick={() => setIntroVisit(n => n + 1)} aria-label="Ram Mohan Reddy K, intro">
-            <img className="brand-mark" src="/ramu-mark.png" alt="" width="52" height="52" />
+            <MascotMark className="brand-mark" />
           </a>
           <div>
             <a href="#about" aria-current={hash === "#about" ? "location" : undefined}>About</a>
