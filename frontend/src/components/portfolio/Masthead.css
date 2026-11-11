@@ -2,7 +2,7 @@
   position: relative;
   display: grid;
   align-content: center;
-  min-height: calc(100svh - 65px);
+  min-height: calc(100svh - 69px);
   padding-block: clamp(80px, 12vh, 140px);
 }
 .intro-copy {
