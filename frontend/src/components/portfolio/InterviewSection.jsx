@@ -3,13 +3,13 @@ import { LINKS } from "../../constants/portfolio";
 
 const projects = [
   { id: "tal", name: "TAL", type: "Career workspace", view: "Career conversation",
-    text: "Track job applications and bring résumé evidence into the same workspace as your career conversations." },
+    text: "Keep job applications and résumé evidence together as you work through your job search." },
   { id: "cvlens", name: "CVLens", type: "Document analysis", view: "Résumé upload",
-    text: "Compare a résumé with a job description and trace each match back to the line that supports it." },
+    text: "Compare your résumé with a job description and see the exact lines behind each match." },
   { id: "peermock", name: "PeerMock", type: "Interview practice", view: "Practice workspace sign-in",
     text: "Book a mock interview slot. Practice with an AI mentor is still in the works." },
   { id: "orbitdesk", name: "OrbitDesk", type: "Support engineering", view: "Support request workspace",
-    text: "Find answers in support documentation, inspect the citations, and stop when the available evidence is too thin." },
+    text: "Review a support answer beside the documents it came from, and see when a question needs a person instead." },
 ];
 
 export function InterviewSection() {
