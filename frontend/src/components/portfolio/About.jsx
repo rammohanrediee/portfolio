@@ -50,6 +50,10 @@ export function About() {
           ))}</div>
           <aside className="about-panel about-quote">
             <figure>
+              <blockquote>“When something is important enough, you do it even if the odds are not in your favour.”</blockquote>
+              <figcaption>— Elon Musk</figcaption>
+            </figure>
+            <figure>
               <blockquote>“The only way to do great work is to love what you do. If you haven't found it yet, keep looking. Don't settle.”</blockquote>
               <figcaption>— Steve Jobs</figcaption>
             </figure>
