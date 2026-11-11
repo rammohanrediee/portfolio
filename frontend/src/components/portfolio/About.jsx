@@ -57,6 +57,7 @@ export function About() {
               <blockquote>“The only way to do great work is to love what you do. If you haven't found it yet, keep looking. Don't settle.”</blockquote>
               <figcaption>— Steve Jobs</figcaption>
             </figure>
+            <p>These are the philosophies I live by. They give me hope to keep going, even when the odds are against me.</p>
           </aside>
         </div>
       </div>
