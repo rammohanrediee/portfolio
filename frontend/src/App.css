@@ -13,14 +13,14 @@ html { scrollbar-gutter: stable; }
 .folio-nav div a[aria-current] { font-weight: 800; }
 .brand-link { display: inline-flex; flex: none; border-radius: 12px; }
 .brand-mark { display: block; width: 52px; height: 52px; object-fit: cover; border: 1px solid var(--rule-strong); border-radius: 12px; }
-.mascot-pupils { animation: mascot-look 5s ease-in-out infinite; }
+.mascot-pupils--playing { animation: mascot-look 1.8s ease-in-out 1; }
 @keyframes mascot-look {
-  0%, 18%, 65%, 100% { transform: translateY(0); }
-  28%, 36% { transform: translateY(-7px); }
-  48%, 56% { transform: translateY(5px); }
+  0%, 50%, 100% { transform: translateY(0); }
+  20%, 30% { transform: translateY(-7px); }
+  70%, 80% { transform: translateY(5px); }
 }
 @media (prefers-reduced-motion: reduce) {
-  .mascot-pupils { animation: none; }
+  .mascot-pupils--playing { animation: none; }
 }
 .page-shell .brand-link:hover { text-decoration: none; }
 .folio-nav div, .footer-line div { gap: clamp(16px, 3vw, 32px); font-size: 14px; }

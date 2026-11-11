@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useReducedMotion } from "framer-motion";
 import { PROFILE } from "../../constants/portfolio";
 import { SocialLinks } from "./SocialLinks";
+import { MascotMark } from "./MascotMark";
 import "./Masthead.css";
 
 const introduction = `I’m ${PROFILE.name}`;
@@ -48,15 +49,21 @@ function IntroTitle() {
   );
 }
 
-export const Masthead = () => (
-  <header className="intro-page">
-    <div className="intro-copy">
-      <img className="intro-mark" src="/ramu-mark.png" width="256" height="256" alt="" decoding="async" />
-      <IntroTitle />
-      <p>I build full-stack web applications in Nandyala, India. Using JavaScript, Python, React, and other technologies, I turn complex ideas into modern web apps with clean, user-friendly experiences.</p>
-      <p>I like being able to check an answer for myself. That’s why I build tools that show where their answers come from.</p>
-      <a className="journey-link" href="#about">Explore my journey <span aria-hidden="true">→</span></a>
-      <SocialLinks className="intro-social" />
-    </div>
-  </header>
-);
+export function Masthead() {
+  const [logoPlayCount, setLogoPlayCount] = useState(0);
+
+  return (
+    <header className="intro-page">
+      <div className="intro-copy">
+        <button className="intro-mark-button" type="button" onClick={() => setLogoPlayCount(n => n + 1)} aria-label="Play mascot eye animation">
+          <MascotMark key={logoPlayCount} className="intro-mark" playing={logoPlayCount > 0} />
+        </button>
+        <IntroTitle />
+        <p>I build full-stack web applications in Nandyala, India. Using JavaScript, Python, React, and other technologies, I turn complex ideas into modern web apps with clean, user-friendly experiences.</p>
+        <p>I like being able to check an answer for myself. That’s why I build tools that show where their answers come from.</p>
+        <a className="journey-link" href="#about">Explore my journey <span aria-hidden="true">→</span></a>
+        <SocialLinks className="intro-social" />
+      </div>
+    </header>
+  );
+}

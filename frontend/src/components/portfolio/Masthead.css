@@ -9,11 +9,21 @@
   width: min(100%, 66ch);
   margin-inline: auto;
 }
+.intro-mark-button {
+  display: block;
+  width: fit-content;
+  margin-bottom: 28px;
+  padding: 0;
+  border: 0;
+  border-radius: 18px;
+  background: none;
+  cursor: pointer;
+}
 .intro-mark {
   display: block;
   width: clamp(76px, 9vw, 104px);
+  aspect-ratio: 1;
   height: auto;
-  margin-bottom: 28px;
   border: 1px solid var(--rule-strong);
   border-radius: 18px;
 }
@@ -26,7 +36,8 @@
 .intro-social a { display: grid; place-items: center; width: 40px; height: 44px; }
 @media (max-width: 840px) {
   .intro-page { padding-top: max(110px, 12vh); }
-  .intro-mark { margin-bottom: 24px; border-radius: 15px; }
+  .intro-mark-button { margin-bottom: 24px; border-radius: 15px; }
+  .intro-mark { border-radius: 15px; }
 }
 .intro-title { display: grid; }
 .intro-title > span { grid-area: 1 / 1; }

@@ -12,6 +12,7 @@ import { MascotMark } from "./components/portfolio/MascotMark";
 export default function App() {
   const [hash, setHash] = useState(() => window.location.hash);
   const [introVisit, setIntroVisit] = useState(0);
+  const [logoPlayCount, setLogoPlayCount] = useState(0);
   const isIntro = !hash || hash === "#top" || hash === "#intro";
 
   useEffect(() => {
@@ -29,8 +30,8 @@ export default function App() {
     <ThemeProvider>
       <div id="top" className="page-shell">
         <nav className="folio-nav" aria-label="Portfolio">
-          <a className="brand-link" href="#intro" onClick={() => setIntroVisit(n => n + 1)} aria-label="Ram Mohan Reddy K, intro">
-            <MascotMark className="brand-mark" />
+          <a className="brand-link" href="#intro" onClick={() => { setIntroVisit(n => n + 1); setLogoPlayCount(n => n + 1); }} aria-label="Ram Mohan Reddy K, play mascot animation and go to intro">
+            <MascotMark key={logoPlayCount} className="brand-mark" playing={logoPlayCount > 0} />
           </a>
           <div>
             <a href="#about" aria-current={hash === "#about" ? "location" : undefined}>About</a>
