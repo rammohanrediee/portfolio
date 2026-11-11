@@ -23,7 +23,7 @@ export function About() {
     <section id="about" className="about-board" aria-labelledby="about-title">
       <h1 id="about-title">About Me</h1>
       <header className="about-person">
-        <img src={portrait} width="144" height="144" alt={PROFILE.name} />
+        <img src={portrait} width="168" height="168" alt={PROFILE.name} />
         <div>
           <h2>Hey, I’m {PROFILE.name}</h2>
           <p>{PROFILE.bio}</p>
