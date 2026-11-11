@@ -50,14 +50,9 @@ export function About() {
           ))}</div>
           <aside className="about-panel about-quote">
             <figure>
-              <blockquote>“Your most unhappy customers are your greatest source of learning.”</blockquote>
-              <figcaption>— Bill Gates</figcaption>
-            </figure>
-            <figure>
-              <blockquote>“I think everybody in this country should learn how to program a computer … because it teaches you how to think.”</blockquote>
+              <blockquote>“The only way to do great work is to love what you do. If you haven't found it yet, keep looking. Don't settle.”</blockquote>
               <figcaption>— Steve Jobs</figcaption>
             </figure>
-            <p>These philosophies guide my approach to software development: learning from feedback and understanding that programming is fundamentally about problem-solving and logical thinking.</p>
           </aside>
         </div>
       </div>
